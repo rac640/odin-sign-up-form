@@ -1,0 +1,21 @@
+.image-and-logo-div{
+border: 2px solid black;
+width: 37%;
+}
+
+
+.sign-up-div{
+    width: 60%;
+    height: 100vh;
+
+    border: 2px solid black;
+    background-color: white;
+
+    /* for positioning element to right side: https://stackoverflow.com/questions/19263524/how-to-position-an-element-to-the-right-side */
+    float: right;
+
+    margin:0;
+    padding: 0;
+
+}
+
