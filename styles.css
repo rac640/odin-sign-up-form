@@ -13,6 +13,10 @@
 .image-and-logo-div{
     flex: 1;
     border: 1px solid black;
+    background-image: url('assets/forest-background.jpg');
+    /* to make image fit div: https://stackoverflow.com/questions/8200204/fit-background-image-to-div */
+    background-size:cover ;
+
 }
 
 .sign-up-div{
