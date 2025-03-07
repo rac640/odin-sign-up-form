@@ -3,6 +3,15 @@
     margin:0;
     padding:0;
 }
+
+
+
+@font-face {
+    font-family: cool-odin-font;
+    src: url(assets/Norse-Bold.otf);
+  }
+
+
 .container{
     display:flex;
     height: 100vh;
@@ -23,3 +32,25 @@
     /* to make this div (which is a flex item) bigger than the other div: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-grow: 3;
 }
+
+
+
+/* taken from "Absolute Positioning" part: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-positioning */
+.black-background{
+    display: flex;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 8rem;
+    text-align: center;
+    font-size: 5rem;
+    font-family: cool-odin-font, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    /* Moving divs vertically: https://stackoverflow.com/questions/15918251/how-to-move-div-vertically-down-using-css */
+    margin-top:50%;
+}
+
+
