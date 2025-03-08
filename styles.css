@@ -24,8 +24,9 @@
     border: 1px solid black;
     background-image: url('assets/forest-background.jpg');
     /* to make image fit div: https://stackoverflow.com/questions/8200204/fit-background-image-to-div */
-    background-size:cover ;
+    background-size:cover;
     text-align:center;
+
     position: relative;
 
 
@@ -33,7 +34,8 @@
 
 .sign-up-div{
     /* to make this div (which is a flex item) bigger than the other div: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-    flex-grow: 3;
+    /* Why doesn't it become half (smaller) when I put flex grow: 1 for this? */
+    flex-grow: 2;
 }
 
 
@@ -70,21 +72,24 @@ sub{
     font-family:cool-odin-font, sans-serif;
 
     /* positioning div at bottom of container: https://stackoverflow.com/questions/526035/how-can-i-position-my-div-at-the-bottom-of-its-container */
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     margin-bottom: 10px;
 
 }
+
+
 /* making the link white */
 a:link {
     color: white;
 }
 
-
 .odin-logo{
 width: 5rem;
 
 }
+
+
 
 
 
