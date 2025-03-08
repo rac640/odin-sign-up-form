@@ -51,6 +51,19 @@
     align-items: center;
     /* Moving divs vertically: https://stackoverflow.com/questions/15918251/how-to-move-div-vertically-down-using-css */
     margin-top:50%;
+
+    /* Aligning items in a flex container: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container */
+  justify-content: center;
 }
+
+
+
+
+
+.odin-logo{
+width: 20%;
+
+}
+
 
 
