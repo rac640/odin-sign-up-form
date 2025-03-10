@@ -133,3 +133,8 @@ font-size: 20px;
 
 
 
+
+
+#password:invalid{
+border:1px solid red;
+}
