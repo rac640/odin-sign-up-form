@@ -40,6 +40,8 @@
     border: 2px solid red;
     display: flex;
     flex-direction: column;
+    /* This is for the sign up div to take up more space than the image and logo div.  */
+    flex: 3;
 
 }
 
