@@ -118,8 +118,6 @@ form{
     padding-top:20px;
     padding-bottom: 20px;
     box-shadow: 0 4px 2px -2px gray;
-
-    
 }
 
 
@@ -159,6 +157,8 @@ border-radius:10px;
 
 input{
     padding: 5px;
+    border: 1px solid #E5E7EB;
+
 }
 
 
