@@ -37,17 +37,23 @@
     /* to make this div (which is a flex item) bigger than the other div: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     /* Why doesn't it become half (smaller) when I put flex grow: 1 for this? */
     flex-grow: 2;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     /* This is for the sign up div to take up more space than the image and logo div.  */
     flex: 3;
+    background-color: rgb(238, 238, 238);
+ 
 
 }
 
+
+
+
+
+
 /* adjusting padding */
 h1, .prev-account{
-    padding: 10px;
+    padding: 40px;
 }
 
 input:focus{
@@ -107,8 +113,12 @@ width: 5rem;
 
 
 form{
-    background-color: beige;
+    background-color: white;
     padding: 10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 2px -2px gray;
+
     
 }
 
@@ -129,18 +139,22 @@ form{
 
 
 
+
 .create-account-button{
     background-color: #596D48;
     color: white;
     width: 10rem;
     height: 2rem;
     border-radius: 10%;
+    margin: 10px;
+
 }
 
 input, label{
    /* border: 1px solid green; */
    margin: 5px;
 font-size: 20px;
+border-radius:10px;
 }
 
 
