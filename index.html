@@ -26,8 +26,8 @@
             <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started!
             </h1>
             <h1>You know you want to.</h1>
-
-            <form action="">
+            <!-- assigning an id to the form for create account button to focus on -->
+            <form action="" id="myform">
                 <p>Let's do this dude/dudette!</p>
                 <div class="big-input-container">
     
@@ -55,7 +55,8 @@
 
             </form>
 
-            <button type="submit" class="create-account-button">Create your account</button>
+            <!-- targeted the form (id=myform) since button is outside of form field -->
+            <button form="myform" type="submit" class="create-account-button">Create your account</button>
 
 
             <p class="prev-account">Already have an account? sign in</p>
