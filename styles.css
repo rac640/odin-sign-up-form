@@ -122,19 +122,33 @@ form{
 
 
 .big-input-container{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display:flex;
+    width: 600px;
+    flex-wrap: wrap;
 
 }
 
 /* idea: make two   */
 .input-container-one, .input-container-two{
-    /* border:1px solid black; */
+    border:1px solid black;
     /* making items the same size */
-    flex: 1;
+    /* flex: 1; */
+    margin-right: 10px;
     /* width: 40%; */
 }
 
+.input-container-one{
+    margin-left: 3%;
+}
+
+
+.lets-do-this{
+border: 1px solid black;
+
+/* for positioning an item as it's own row: https://tobiasahlin.com/blog/flexbox-break-to-new-row/ */
+flex-basis: 100%;
+}
 
 
 
@@ -142,9 +156,11 @@ form{
     background-color: #596D48;
     color: white;
     width: 10rem;
-    height: 2rem;
+    height: 4rem;
     border-radius: 10px;
-    margin: 10px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 1rem;
 
 }
 
