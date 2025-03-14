@@ -29,7 +29,7 @@
             <!-- assigning an id to the form for create account button to focus on -->
             <form action="" id="myform">
                 <div class="big-input-container">
-                    <p class="lets-do-this">Let's do this!</p>
+                    <div class="lets-do-this">let's do this!</div>
 
                     <div class="input-container-one">
                         <!-- wrapping each of the items (within first and second containers) in a div helped me make columns -->
@@ -56,10 +56,11 @@
             </form>
 
             <!-- targeted the form (id=myform) since button is outside of form field -->
-            <button form="myform" type="submit" class="create-account-button">Create your account</button>
-
-
-            <p class="prev-account">Already have an account? sign in</p>
+           
+            <div class="bottom-of-form">
+                <button form="myform" type="submit" class="create-account-button">Create your account</button>
+                <p class="prev-account">Already have an account? sign in</p>
+            </div>
 
 
         </div>

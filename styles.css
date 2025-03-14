@@ -52,7 +52,7 @@
 
 
 /* adjusting padding */
-h1, .prev-account{
+h1{
     padding: 40px;
 }
 
@@ -122,32 +122,29 @@ form{
 
 
 .big-input-container{
-    border: 1px solid red;
     display:flex;
-    width: 600px;
+
+    /* set width to auto to make big container equal sizes (no set size for container) */
+    width: auto;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
 
 }
 
-/* idea: make two   */
-.input-container-one, .input-container-two{
-    border:1px solid black;
-    /* making items the same size */
-    /* flex: 1; */
-    margin-right: 10px;
-    /* width: 40%; */
-}
+
 
 .input-container-one{
-    margin-left: 3%;
+   margin-right: 50px;
 }
+
 
 
 .lets-do-this{
-border: 1px solid black;
 
 /* for positioning an item as it's own row: https://tobiasahlin.com/blog/flexbox-break-to-new-row/ */
 flex-basis: 100%;
+margin-bottom: 5%;
 }
 
 
@@ -155,10 +152,10 @@ flex-basis: 100%;
 .create-account-button{
     background-color: #596D48;
     color: white;
-    width: 10rem;
+    width: 15rem;
     height: 4rem;
     border-radius: 10px;
-    margin: 15px;
+    /* margin: 15px; */
     padding: 15px;
     font-size: 1rem;
 
@@ -178,13 +175,16 @@ input{
 }
 
 
-
-
-
-
-
-
 #password, #confirm-password:invalid{
 border:1px solid red;
 }
 
+
+.bottom-of-form{
+    /* border: 1px solid black; */
+    width: 30%;
+    margin:2%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
