@@ -44,8 +44,20 @@
                      <div class="input-container-two"> 
                         <div><label for="phone-number">Phone Number</label></div>
                         <div><input type="tel" name="phone-number" id="phone-number" required></div>
+
+                        <!-- 
+                        Validation for password: 
+                        - Minimum total characters: 12 CHECK 
+                        - Maximum total characters: 64
+                        - Must have one number 
+                        - Must have at least one uppercase letter 
+                        - Must have at least one lowercase letter 
+                        - Must have one special character 
+
+     
+                        -->
                         <div><label for="password">Password</label></div>
-                        <div><input type="password" name="password" id="password" required></div>
+                        <div><input type="password" name="password" id="password" minlength="12" maxlength="64"></div>
                         <div><label for="confirm-password">Confirm Password</label></div>
                         <div><input type="password" name="confirm-password" id="confirm-password" required></div>
                     </div> 
