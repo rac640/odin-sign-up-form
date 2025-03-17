@@ -34,30 +34,36 @@
                     <div class="input-container-one">
                         <!-- wrapping each of the items (within first and second containers) in a div helped me make columns -->
                         <div><label for="first-name">First Name</label></div>
-                        <div><input type="text" name="first-name" id="first-name" required></div>
+                        <div><input type="text" name="first-name" id="first-name" value="a" required></div>
+                        
                         <div><label for="last-name">Last Name</label></div>
-                        <div><input type="text" name="last-name" id="last-name" required></div>
+                        <div><input type="text" name="last-name" id="last-name" value="a" required></div>
+                        
                         <div><label for="email">Email</label></div>
-                        <div><input type="email" name="email" id="email" required></div>
+                        <div><input type="email" name="email" id="email" value="a@a" required></div>
                     </div>
     
                      <div class="input-container-two"> 
                         <div><label for="phone-number">Phone Number</label></div>
-                        <div><input type="tel" name="phone-number" id="phone-number" required></div>
+                        <div><input type="tel" name="phone-number" id="phone-number" value="a" required></div>
 
                         <!-- 
-                        Validation for password: 
+                        Validation requirements for password: 
                         - Minimum total characters: 12 CHECK 
-                        - Maximum total characters: 64
-                        - Must have one number 
-                        - Must have at least one uppercase letter 
-                        - Must have at least one lowercase letter 
-                        - Must have one special character 
+                        - Maximum total characters: 64 CHECK 
+
+                        Reference: https://www.geeksforgeeks.org/javascript-program-to-validate-password-using-regular-expressions/
+                        - Minimum 8 characters: {8,}
+                        - Must have at least one number: (?=.*?[0-9])
+                        - Must have at least one uppercase letter: (?=.*?[A-Z])
+                        - Must have at least one lowercase letter: (?=.*?[a-z])
+                        - Must have at least one special character: (?=.*?[#?!@$%^&*-])
 
      
                         -->
                         <div><label for="password">Password</label></div>
-                        <div><input type="password" name="password" id="password" minlength="12" maxlength="64"></div>
+                        <div><input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$"  required></div>
+                        
                         <div><label for="confirm-password">Confirm Password</label></div>
                         <div><input type="password" name="confirm-password" id="confirm-password" required></div>
                     </div> 
