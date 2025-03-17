@@ -45,19 +45,20 @@
     
                      <div class="input-container-two"> 
                         <div><label for="phone-number">Phone Number</label></div>
-                        <div><input type="tel" name="phone-number" id="phone-number" value="a" required></div>
+                        <!-- regex to put in 11 numbers (2:19): https://www.youtube.com/watch?v=Dvb7eT36hMM&list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD&index=5&ab_channel=NetNinja -->
+                        <div><input type="tel" name="phone-number" id="phone-number" value="a" pattern="[0-9]{10}"></div>
 
                         <!-- 
                         Validation requirements for password: 
                         - Minimum total characters: 12 CHECK 
                         - Maximum total characters: 64 CHECK 
 
-                        Reference: https://www.geeksforgeeks.org/javascript-program-to-validate-password-using-regular-expressions/
-                        - Minimum 8 characters: {8,}
-                        - Must have at least one number: (?=.*?[0-9])
-                        - Must have at least one uppercase letter: (?=.*?[A-Z])
-                        - Must have at least one lowercase letter: (?=.*?[a-z])
-                        - Must have at least one special character: (?=.*?[#?!@$%^&*-])
+                    Reference: https://www.geeksforgeeks.org/javascript-program-to-validate-password-using-regular-expressions/
+                      - ^(?=.*[a-z]): Ensures at least one lowercase letter.
+                      - (?=.*[A-Z]): Ensures at least one uppercase letter.
+                      - (?=.*\d): Ensures at least one digit.
+                      - (?=.*[@$!%*?&]): Ensures at least one special character.
+                      - [A-Za-z\d@$!%*?&]{8,}$: Ensures the password is at least 8 characters long.
 
      
                         -->
