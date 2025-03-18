@@ -175,8 +175,12 @@ input{
 }
 
 
-#password, #confirm-password:invalid{
+#password:invalid, #confirm-password:invalid{
 border:1px solid red;
+}
+
+#password:valid, #confirm-password:valid{
+    border: 1px solid green;
 }
 
 

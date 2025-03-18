@@ -34,10 +34,10 @@
                     <div class="input-container-one">
                         <!-- wrapping each of the items (within first and second containers) in a div helped me make columns -->
                         <div><label for="first-name">First Name</label></div>
-                        <div><input type="text" name="first-name" id="first-name" value="a" required></div>
+                        <div><input type="text" name="first-name" id="first-name" minlength="1" maxlength="64" required></div>
                         
                         <div><label for="last-name">Last Name</label></div>
-                        <div><input type="text" name="last-name" id="last-name" value="a" required></div>
+                        <div><input type="text" name="last-name" id="last-name" minlength="1" maxlength="64" required></div>
                         
                         <div><label for="email">Email</label></div>
                         <div><input type="email" name="email" id="email" value="a@a" required></div>
@@ -66,7 +66,7 @@
                         <div><input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$"  required></div>
                         
                         <div><label for="confirm-password">Confirm Password</label></div>
-                        <div><input type="password" name="confirm-password" id="confirm-password" required></div>
+                        <div><input type="password" name="confirm-password" id="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$" required></div>
                     </div> 
 
 
