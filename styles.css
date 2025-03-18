@@ -29,7 +29,6 @@
     /* to make image fit div: https://stackoverflow.com/questions/8200204/fit-background-image-to-div */
     background-size:cover;
     text-align:center;
-    position: relative;
 
 }
 
@@ -45,8 +44,6 @@
  
 
 }
-
-
 
 
 
