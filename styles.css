@@ -29,6 +29,8 @@
     /* to make image fit div: https://stackoverflow.com/questions/8200204/fit-background-image-to-div */
     background-size:cover;
     text-align:center;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -85,16 +87,15 @@ input:focus{
 
 
 sub{
+    /* positioning div at bottom of container: https://stackoverflow.com/questions/526035/how-can-i-position-my-div-at-the-bottom-of-its-container */
+    bottom: 0;
     position: absolute;
-
     color: white;
     font-family:cool-odin-font, sans-serif;
+    border: 1px solid white;
+    margin: auto;
 
-    /* positioning div at bottom of container: https://stackoverflow.com/questions/526035/how-can-i-position-my-div-at-the-bottom-of-its-container */
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10px;
-    
+    /* position: absolute; */
 
 }
 
