@@ -31,6 +31,9 @@
     text-align:center;
     display: flex;
     flex-direction: column;
+    /* to center the white text */
+    align-items: center;
+
 
 }
 
@@ -93,9 +96,8 @@ sub{
     color: white;
     font-family:cool-odin-font, sans-serif;
     border: 1px solid white;
-    margin: auto;
-
-    /* position: absolute; */
+    margin-bottom: 10px;
+    text-align: center;
 
 }
 
