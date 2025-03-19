@@ -42,19 +42,19 @@
                     <div class="input-container-one">
                         <!-- wrapping each of the items (within first and second containers) in a div helped me make columns -->
                         <div><label for="first-name">First Name</label></div>
-                        <div><input type="text" name="first-name" id="first-name" minlength="1" maxlength="64" required></div>
+                        <div><input type="text" name="first-name" id="first-name" minlength="1" maxlength="64" placeholder="Spongebob"></div>
                         
                         <div><label for="last-name">Last Name</label></div>
-                        <div><input type="text" name="last-name" id="last-name" minlength="1" maxlength="64" required></div>
+                        <div><input type="text" name="last-name" id="last-name" minlength="1" maxlength="64" placeholder="Squarepants" required></div>
                         
                         <div><label for="email">Email</label></div>
-                        <div><input type="email" name="email" id="email" value="a@a" required></div>
+                        <div><input type="email" name="email" id="email" placeholder="spongebob@gmail.com" required></div>
                     </div>
     
                      <div class="input-container-two"> 
                         <div><label for="phone-number">Phone Number (Must be 10 digits)</label></div>
                         <!-- regex to put in 11 numbers (2:19): https://www.youtube.com/watch?v=Dvb7eT36hMM&list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD&index=5&ab_channel=NetNinja -->
-                        <div><input type="tel" name="phone-number" id="phone-number" value="a" pattern="[0-9]{10}"></div>
+                        <div><input type="tel" name="phone-number" placeholder="4343567821" id="phone-number"  pattern="[0-9]{10}"></div>
 
                         <!-- 
                         Validation requirements for password: 
